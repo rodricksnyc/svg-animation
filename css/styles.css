@@ -1219,6 +1219,41 @@ input[type="text"].allResults {
 
 }
 
+.fal.fa-award {
+  font-size:65px;
+  color:#007E9D;
+  margin-right: -.5em;
+  margin-top: .1em;
+}
+
+.fal.fa-chart-bar {
+  font-size:65px;
+  color:#007E9D;
+  margin-right: -.5em;
+  margin-top: .1em;
+}
+
+.fal.fa-lightbulb {
+  font-size:65px;
+  color:#007E9D;
+  margin-right: -.5em;
+  margin-top: .1em;
+}
+
+.fal.fa-coins {
+  font-size:65px;
+  color:#007E9D;
+  margin-left: -.5em;
+  margin-top: .1em;
+}
+
+.fal.fa-rocket{
+    font-size: 65px;
+    color: #007E9D;
+    margin-left: -.5em;
+    margin-top: .1em;
+}
+
 
 .shadow {
   -webkit-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.23);
@@ -1232,6 +1267,99 @@ h2 {
   line-height: 35px;
   margin-top: 0em;
 }
+
+h3 {
+    font-size: 18px;
+    text-align: left;
+    line-height: 33px;
+    margin-top: 0em;
+}
+
+/* .hero-img-container4 {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 33rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0em;
+
+    top: 50px;
+} */
+.hero-img4 {
+    background-image: url(../images/keyboard.jpg);
+    height: inherit;
+    min-height: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0;
+    height: 282px !important;
+
+    margin-top: 5em;
+    background-position: 0px 35%;
+    margin-bottom:30em;
+}
+
+.strip {
+    background-color: #347299;
+    position: absolute;
+    height:282px;
+    z-index: 3;
+    right: 0;
+    width: 100%;
+    opacity: .74;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+blockquote.new {
+    display: block;
+    position: relative;
+    border-left: none;
+    font-size: 31px;
+    text-align: left;
+    font-style: italic;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+    left: 0%;
+    top: 35px;
+    max-width: 80%;
+    z-index: 9999999999999999999999999999999;
+}
+blockquote.new:before {
+  color:#22BBAD;
+}
+
+blockquote.new:after {
+    content: '\201D';
+    position: absolute;
+    top: 190px;
+    right: -6px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font: 7em 'PT Sans', sans-serif;
+      color:#22BBAD;
+    text-align: center;
+    font-style: italic;
+}
+
+.norman {
+    float: right;
+    padding-right: 2em;
+    padding-top: 1em;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    font-weight: 500;
+}
+
+
 
 .blueSlider {
   /* position: absolute;
