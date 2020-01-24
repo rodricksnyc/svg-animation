@@ -1215,10 +1215,15 @@ input[type="text"].allResults {
 } */
 
 .newWrapper2 {
-  background:#edf9f8;
+  /* background:#edf9f8; */
+  background: rgb(244,251,251);
+  background: linear-gradient(90deg, rgba(244,251,251,0.9220063025210083) 40%, rgba(232,245,246,1) 57%, rgba(232,244,246,1) 83%);
 
 }
-
+.newWrapper3 {
+  background: rgb(244,251,251);
+  background: linear-gradient(270deg, rgba(244,251,251,0.9514180672268907) 24%, rgba(232,245,246,0.9626225490196079) 42%, rgba(217,230,237,0.9850315126050421) 97%);
+}
 .fal.fa-award {
   font-size:65px;
   color:#007E9D;
@@ -1302,7 +1307,7 @@ h3 {
 
     margin-top: 5em;
     background-position: 0px 35%;
-    margin-bottom:30em;
+    margin-bottom:5em;
 }
 
 .strip {
@@ -1312,7 +1317,7 @@ h3 {
     z-index: 3;
     right: 0;
     width: 100%;
-    opacity: .74;
+    opacity: .8;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -1334,6 +1339,7 @@ blockquote.new {
 }
 blockquote.new:before {
   color:#22BBAD;
+  opacity: .6;
 }
 
 blockquote.new:after {
@@ -1347,6 +1353,7 @@ blockquote.new:after {
       color:#22BBAD;
     text-align: center;
     font-style: italic;
+      opacity: .6;
 }
 
 .norman {
@@ -1357,6 +1364,47 @@ blockquote.new:after {
     font-style: normal;
     color: white;
     font-weight: 500;
+}
+
+h4.navy {
+    color: #07477c;
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+h4.navy.small {
+    color: #07477c;
+    font-size: 27px;
+    font-weight: 100;
+
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background: #1A2A57;
+}
+
+.footer-wrapper {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.img-wes-logo {
+    height: 4.5rem;
+}
+
+.bottomTag {
+  padding-top:.5em;
 }
 
 
@@ -1471,11 +1519,34 @@ ul.discs li::before {
 }
 
 #particles-js {
-  position: absolute;
-  width: 60%;
-  height: 50%;
-  right: -10%;
 
+  position: absolute;
+      width: 100%;
+      height: 69%;
+      right: -50%;
+      overflow: hidden;
+}
+
+#particles {
+
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      right: -50%;
+      overflow: hidden;
+}
+
+#particles-templates {
+
+      position: absolute;
+      width: 100%;
+      height: 69%;
+      left: -50%;
+      overflow: hidden;
+}
+
+.content-spacer3 {
+    height: 6vh;
 }
 
 blockquote {

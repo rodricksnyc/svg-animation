@@ -5,23 +5,6 @@ $(document).ready(function () {
 //
 // $(".newWrapper3").addClass('newClass');
 
-$('a[href^="#slideDown"]').on('click', function(event) {
-
-// $(".newWrapper").removeClass('newClass');
-//
-//  $(".newWrapper2").removeClass('newClass')
-//  $(".newWrapper3").removeClass('newClass')
-  var target = $(this.getAttribute('href'));
-
-  if( target.length ) {
-    event.preventDefault();
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top
-    }, 1600);
-
-  }
-
-
 
     var color = '#bdeae6';
     var maxParticles = 80;
@@ -139,6 +122,138 @@ $('a[href^="#slideDown"]').on('click', function(event) {
 
   draw();
 
+
+  var color = '#bdeae6';
+  var maxParticles = 80;
+
+
+function drawAgain() {
+  particlesJS('particles', {
+    'particles': {
+      'number': {
+        'value': maxParticles,
+        'density': {
+          'enable': true,
+          'value_area': (maxParticles * 10) * 2
+        }
+      },
+      'color': {
+        'value': color
+      },
+      'shape': {
+        'type': 'circle',
+        'stroke': {
+          'width': 0,
+          'color': '#000000'
+        },
+        'polygon': {
+          'nb_sides': 5
+        },
+      },
+      'opacity': {
+        'value': 1,
+        'random': false,
+        'anim': {
+          'enable': false,
+          'speed': 1,
+          'opacity_min': 1,
+          'sync': false
+        }
+      },
+      'size': {
+        'value': 4,
+        'random': true,
+        'anim': {
+          'enable': false,
+          'speed': 40,
+          'size_min': 0.1,
+          'sync': false
+        }
+      },
+      'line_linked': {
+        'enable': true,
+        'distance': 300,
+        'color': color,
+        'opacity': 1,
+        'width': 1
+      },
+      'move': {
+        'enable': true,
+        'speed': 2,
+        'direction': 'none',
+        'random': false,
+        'straight': false,
+        'out_mode': 'out',
+        'bounce': false,
+        'attract': {
+          'enable': false,
+          'rotateX': 600,
+          'rotateY': 1200
+        }
+      }
+    },
+    'interactivity': {
+      'detect_on': 'canvas',
+      'events': {
+        'onhover': {
+          'enable': true,
+          'mode': 'grab'
+        },
+        'onclick': {
+          'enable': true,
+          'mode': 'push'
+        },
+        'resize': true
+      },
+      'modes': {
+        'grab': {
+          'distance': 140,
+          'line_linked': {
+            'opacity': 1
+          }
+        },
+        'bubble': {
+          'distance': 400,
+          'size': 40,
+          'duration': 2,
+          'opacity': 8,
+          'speed': 3
+        },
+        'repulse': {
+          'distance': 200,
+          'duration': 0.4
+        },
+        'push': {
+          'particles_nb': 4
+        },
+        'remove': {
+          'particles_nb': 2
+        }
+      }
+    },
+    'retina_detect': true
+
+  })
+
+}
+
+drawAgain();
+
+$('a[href^="#slideDown"]').on('click', function(event) {
+
+// $(".newWrapper").removeClass('newClass');
+//
+//  $(".newWrapper2").removeClass('newClass')
+//  $(".newWrapper3").removeClass('newClass')
+  var target = $(this.getAttribute('href'));
+
+  if( target.length ) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1600);
+
+  }
 
 
 })
