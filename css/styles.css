@@ -1209,10 +1209,179 @@ input[type="text"].allResults {
   left: -9999px;
 }
 
-/* .newWrapper3 {
-  background:#edf9f8;
+.w1200 {
+  max-width:1200px;
+}
 
-} */
+.lightBlueBox {
+      background: #eefaf9;
+      padding: 5em 0em;
+      height: 20em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+h1.teal.medium {
+    color: #15617d;
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+.lightBlueBox .fal {
+    font-size: 65px;
+    color: #15617d;
+
+}
+
+.flip-card-front .fal {
+    font-size: 65px;
+    color: #15617d;
+
+}
+
+.flip-card-back .fal {
+    font-size: 40px;
+    color: white;
+
+}
+
+.flip-card {
+  background-color: transparent;
+  height:20em;
+
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  /* -webkit-box-shadow: 0px 0px 14px 2px rgba(115,115,115,0.49);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(115,115,115,0.49);
+  box-shadow: 0px 0px 14px 2px rgba(115,115,115,0.49); */
+}
+
+h1.white {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom:0px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1em 2em;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: #eefaf9;
+  padding: 5em 0em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: rgb(42,178,170);
+  background: rgb(42,178,170);
+  background: linear-gradient(22deg, rgba(42,178,170,1) 0%, rgba(18,120,148,0.8841911764705882) 29%, rgba(21,99,127,1) 100%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p.white {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 21px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 3em;
+}
+
+.flip-card-back hr {
+  margin-top:2px;
+  margin-bottom:2px;
+}
+
+.menu-buttons-floating {
+    position: fixed;
+    top: 240px;
+      left: 50px;
+    z-index: 10;
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+.menu-buttons-floating-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.menu-buttons-floating-list li {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: black;
+}
+.menu-buttons-floating-list span:nth-child(1)  li{
+  background:#e2434f
+}
+.menu-buttons-floating-list span:nth-child(2) li {
+  background:#f8a531
+}
+
+.menu-buttons-floating-list span:nth-child(4) li {
+  background:#79be4b
+}
+.menu-buttons-floating-list span:nth-child(5) li {
+  background:#1daee2
+}
+
+
+li .fal {
+  font-size: 24px;
+    padding-top: 8px;
+}
+
+.menu-buttons-floating-list span p {
+      font-size: 13px;
+      line-height: 0px;
+      margin-top: 0em;
+      margin-bottom: 2em;
+}
+.menu-buttons-floating-list span {
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+
+
+
 
 .newWrapper2 {
   /* background:#edf9f8; */
@@ -1223,6 +1392,17 @@ input[type="text"].allResults {
 .newWrapper3 {
   background: rgb(244,251,251);
   background: linear-gradient(270deg, rgba(244,251,251,0.9514180672268907) 24%, rgba(232,245,246,0.9626225490196079) 42%, rgba(217,230,237,0.9850315126050421) 97%);
+}
+
+.newWrapper4 {
+
+      min-height: 100vh;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      padding-bottom: 50px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,0.773546918767507) 39%, rgba(232,245,246,0.9626225490196079) 75%, rgba(217,230,237,0.9850315126050421) 100%);
 }
 .fal.fa-award {
   font-size:65px;
@@ -1522,8 +1702,9 @@ ul.discs li::before {
 
   position: absolute;
       width: 100%;
-      height: 69%;
-      right: -50%;
+      height: 60%;
+      right: -60%;
+
       overflow: hidden;
 }
 
@@ -1533,6 +1714,18 @@ ul.discs li::before {
       width: 100%;
       height: 90%;
       right: -50%;
+
+      overflow: hidden;
+}
+
+
+#particles-third {
+
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      left: -68%;
+
       overflow: hidden;
 }
 
@@ -1540,8 +1733,9 @@ ul.discs li::before {
 
       position: absolute;
       width: 100%;
-      height: 69%;
-      left: -50%;
+      height: 60%;
+      left: -70%;
+      top:0;
       overflow: hidden;
 }
 
