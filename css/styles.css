@@ -260,12 +260,12 @@ input[type="text"].allResults {
 }
 
 .hover3, .hover2 {
-  height: 50vh;
+  height: 55vh;
   width: 95%;
   position: absolute;
   z-index: 9999999999999999;
   margin-left: 1em;
-  top:4em;
+  top:1em;
 }
 .hover4 {
   height: 50vh;
@@ -1209,17 +1209,29 @@ input[type="text"].allResults {
   left: -9999px;
 }
 
+.p2 {
+  padding-right:2em;
+}
+
 .w1200 {
   max-width:1200px;
 }
 
 .lightBlueBox {
       background: #eefaf9;
-      padding: 5em 0em;
-      height: 20em;
+      padding: 3em 0em;
+      height: 11em;
       display: flex;
       flex-direction: column;
       align-items: center;
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08)
+}
+
+h1.navy.smaller {
+    color: #07477c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: .6em;
 }
 
 h1.teal.medium {
@@ -1229,9 +1241,13 @@ h1.teal.medium {
 
 }
 
+.content-spacer4 {
+  height:2vh;
+}
+
 .lightBlueBox .fal {
-    font-size: 65px;
-    color: #15617d;
+    font-size: 45px;
+    color: #07477c;
 
 }
 
@@ -1242,6 +1258,44 @@ h1.teal.medium {
 }
 
 .flip-card-back .fal {
+    font-size: 40px;
+    color: white;
+
+}
+
+.flip-card-front .fab {
+    font-size: 65px;
+    color: #15617d;
+
+}
+
+.downloadSet {
+    background: #127e9b;
+    height: 52px;
+    width: 185px;
+    padding: 0.5em .6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.icons .fal {
+    font-size: 65px;
+    color: #15617d;
+
+}
+
+.icons h1.navy.larger {
+    color: #07477c;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+.flip-card-back .fab {
     font-size: 40px;
     color: white;
 
@@ -1319,10 +1373,15 @@ h1.white {
   margin-bottom:2px;
 }
 
+.flip-card-back .fal.fa-arrow-right {
+  font-size:30px;
+
+}
+
 .menu-buttons-floating {
     position: fixed;
     top: 240px;
-      left: 50px;
+    left: 50px;
     z-index: 10;
     transform: scale(0.9);
     transition: all 0.5s;
@@ -1346,13 +1405,59 @@ h1.white {
     cursor: pointer;
     transition: all 0.3s;
     color: black;
+    margin-bottom:2.8em;
 }
 .menu-buttons-floating-list span:nth-child(1)  li{
   background:#e2434f
 }
+
+.menu-buttons-floating-list span:nth-child(1)  li::after {
+  content: "Home";
+  font-size:13px;
+  position: relative;
+  color:#15617d;
+}
+
 .menu-buttons-floating-list span:nth-child(2) li {
   background:#f8a531
 }
+
+.menu-buttons-floating-list span:nth-child(2)  li::after {
+  content: "Guidelines";
+  font-size:13px;
+  position: relative;
+  left: -13%;
+  color:#15617d;
+}
+
+.menu-buttons-floating-list span:nth-child(3) li {
+  background:#2fbaad
+}
+
+.menu-buttons-floating-list span:nth-child(3)  li::after {
+  content: "Templates";
+  font-size:13px;
+  position: relative;
+  left: -10%;
+  color:#15617d;
+}
+
+.menu-buttons-floating-list span:nth-child(4)  li::after {
+  content: "Resources";
+  font-size:13px;
+  position: relative;
+  left: -10%;
+  color:#15617d;
+}
+
+.menu-buttons-floating-list span:nth-child(5)  li::after {
+  content: "Solutions";
+  font-size:13px;
+  position: relative;
+  left: -8%;
+  color:#15617d;
+}
+
 
 .menu-buttons-floating-list span:nth-child(4) li {
   background:#79be4b
@@ -1360,6 +1465,17 @@ h1.white {
 .menu-buttons-floating-list span:nth-child(5) li {
   background:#1daee2
 }
+
+.menu-buttons-floating-list span li.active {
+  background: white;
+  color:#15617d;
+  transform: scale(1.19);
+}
+
+.menu-buttons-floating-list span li.active:after {
+    left: -14%;
+}
+
 
 
 li .fal {
@@ -1384,17 +1500,27 @@ li .fal {
 
 
 .newWrapper2 {
+
+    padding-left: 2em;
+      padding-right: 2em;
   /* background:#edf9f8; */
   background: rgb(244,251,251);
   background: linear-gradient(90deg, rgba(244,251,251,0.9220063025210083) 40%, rgba(232,245,246,1) 57%, rgba(232,244,246,1) 83%);
 
 }
 .newWrapper3 {
+
+    padding-left: 2em;
+      padding-right: 2em;
   background: rgb(244,251,251);
   background: linear-gradient(270deg, rgba(244,251,251,0.9514180672268907) 24%, rgba(232,245,246,0.9626225490196079) 42%, rgba(217,230,237,0.9850315126050421) 97%);
 }
 
 .newWrapper4 {
+
+  padding-left: 2em;
+    padding-right: 2em;
+
 
       min-height: 100vh;
       overflow: hidden;
@@ -1733,8 +1859,8 @@ ul.discs li::before {
 
       position: absolute;
       width: 100%;
-      height: 60%;
-      left: -70%;
+      height: 95%;
+      left: -50%;
       top:0;
       overflow: hidden;
 }
