@@ -14,6 +14,16 @@ $('.newWrapper4').css('background', 'linear-gradient(90deg, rgba(255,255,255,0.7
 
 })
 
+// $('.strips .lightBlueBox').on('mouseenter', function() {
+// $('.strips h1.navy.smaller').css('color', 'white')
+// })
+//
+// $('.strips .lightBlueBox').on('mouseleave', function() {
+// $('.strips h1.navy.smaller').css('color', '#07477c')
+// })
+
+
+
 
 var color = '#bdeae6';
 var maxParticles = 80;

@@ -1309,6 +1309,26 @@ h1.teal.medium {
   border-radius: 10px;
 }
 
+.strips .lightBlueBox {
+    height:8em;
+    margin-bottom:1em;
+}
+.strips h1.navy.smaller {
+    color: #07477c;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 0em;
+}
+
+
+.strips .lightBlueBox:hover {
+  background: rgb(42,178,170);
+  background: rgb(42,178,170);
+  background: linear-gradient(22deg, rgba(42,178,170,1) 0%, rgba(18,120,148,0.8841911764705882) 29%, rgba(21,99,127,1) 100%);
+
+
+}
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -1473,7 +1493,7 @@ h1.white {
 }
 
 .menu-buttons-floating-list span li.active:after {
-    left: -14%;
+    /* left: -14%; */
 }
 
 
