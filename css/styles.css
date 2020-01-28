@@ -1312,12 +1312,24 @@ h1.teal.medium {
 .strips .lightBlueBox {
     height:8em;
     margin-bottom:1em;
+    position:relative;
 }
 .strips h1.navy.smaller {
     color: #07477c;
     font-size: 30px;
     font-weight: 600;
     margin-top: 0em;
+}
+
+.hangRight {
+  position:absolute;
+  right:15px;
+  visibility: hidden;
+}
+
+.hangRight .fal{
+font-size:33px;
+color:white;
 }
 
 

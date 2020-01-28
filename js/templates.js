@@ -15,11 +15,12 @@ $('.newWrapper4').css('background', 'linear-gradient(90deg, rgba(255,255,255,0.7
 })
 
 $('.strips .lightBlueBox').on('mouseenter', function() {
-
+$(this).find('.hangRight').css('visibility', 'visible')
  $(this).find('h1.navy.smaller').css('color', 'white')
 })
 
 $('.strips .lightBlueBox').on('mouseleave', function() {
+$(this).find('.hangRight').css('visibility', 'hidden')
 $('.strips h1.navy.smaller').css('color', '#07477c')
 })
 
